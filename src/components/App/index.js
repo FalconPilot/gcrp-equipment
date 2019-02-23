@@ -45,7 +45,11 @@ class App extends Component {
             type={this.state.type}
             updateValue={this.updateOption}
           />
-          <Viewport className='item-viewport' option={this.state.option} />
+          <Viewport
+            className='item-viewport'
+            option={this.state.option}
+            country={this.state.country}
+          />
         </main>
         <footer className='app-footer'>
         </footer>
