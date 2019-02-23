@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "prod": "http-server dist/index.html",
     "heroku-postbuild": "parcel build src/index.html"
   },
   "dependencies": {
