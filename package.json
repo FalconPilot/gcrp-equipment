@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "parcel src/index.html",
-    "heroku-postbuild": "parcel build src/index.html"
+    "build": "parcel build src/index.html --public-url dist",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "@babel/plugin-proposal-class-properties": "^7.3.3",
