@@ -49,3 +49,7 @@ div.item-viewport {
 div.item-viewport > h2 {
   text-align: center;
 }
+
+div.item-viewport > img {
+  max-width: 100%;
+}

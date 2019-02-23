@@ -19,7 +19,7 @@ class App extends Component {
     const country = Object.entries(countries)[0]
     this.state = {
       country: country[1],
-      option: country[0],
+      option: 'COUNTRY',
       type: 'COUNTRY'
     }
   }
