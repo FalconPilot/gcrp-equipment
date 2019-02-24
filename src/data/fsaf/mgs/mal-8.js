@@ -25,6 +25,6 @@ export default {
   cons: [
     'Complex to manufacture',
     'Recoil is kinda heavy',
-    'Troops must be properly trained to maximize efficiency'
+    'Not very agile'
   ]
 }
