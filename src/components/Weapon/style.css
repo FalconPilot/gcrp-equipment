@@ -6,3 +6,78 @@ p.weapon-subtitle {
 p.weapon-subtitle.future {
   color: #AAA;
 }
+
+div.weapon-stat {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+div.weapon-stat > label {
+  width: 40px;
+  padding-left: 10px;
+  font-size: 10px;
+  font-style: italic;
+  color: #999;
+}
+
+div.weapon-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 20px;
+  margin-left: 40px;
+  background-color: #333;
+  border: 1px solid #668;
+  border-radius: 4px;
+}
+
+div.weapon-bar > strong {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  z-index: 2;
+  color: #FFF;
+}
+
+div.weapon-bar > p {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  background-color: #468;
+  border-radius: 3px;
+}
+
+table.weapon-caracs {
+  padding: 8px;
+  border: 1px dotted #777;
+  border-radius: 10px;
+}
+
+table.weapon-caracs td:first-child {
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+table.weapon-caracs td:nth-child(2) {
+  font-style: italic;
+}
+
+table.weapon-caracs td {
+  color: #777;
+  padding: 2px;
+  border-bottom: 1px dashed #AAA;
+}
+
+pre.weapon-description {
+  width: 100%;
+  padding: 5px;
+  white-space: pre-wrap;
+}

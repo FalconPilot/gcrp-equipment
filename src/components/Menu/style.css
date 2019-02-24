@@ -2,10 +2,19 @@ div.side-menu {
   width: 180px;
   display: flex;
   flex-direction: column;
+  overflow: auto;
+}
+
+div.side-menu > h3 {
+  margin: 10px 20px;
+  padding: 5px 0;
+  text-align: center;
+  border-bottom: 1px solid #CCC;
 }
 
 div.side-menu > button {
   display: flex;
+  align-items: center;
   margin: 5px 0;
   border: none;
   background-color: #777;
@@ -45,4 +54,18 @@ div.side-menu > button.selected {
 div.side-menu > button:active,
 div.side-menu > button:focus {
   outline: none;
+}
+
+@media all and (max-width: 748px) {
+  div.side-menu {
+    width: 100px;
+  }
+
+  div.side-menu > h3 {
+    font-size: 12px;
+  }
+
+  div.side-menu > button {
+    font-size: 9px;
+  }
 }
