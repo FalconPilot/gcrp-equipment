@@ -29,7 +29,7 @@ class App extends Component {
     this.setState({
       option: event.currentTarget.value,
       type: event.currentTarget.dataset.type
-    }, () => console.log(this.state))
+    })
   }
 
   changeCountry = (event) => {
