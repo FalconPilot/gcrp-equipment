@@ -7,6 +7,7 @@ export default {
   year: 1897,
   image: <img src={SVG} />,
   capacity: 4,
+  action: 'Bolt-action',
   caliber: '7.68x40mm AFS',
   range: 'Medium',
   production_cost: 'Low',

@@ -47,6 +47,7 @@ const weaponCarac = (label, value) => (
 const weaponCaracs = (weapon) => (
     <table className='weapon-caracs'>
       <tbody>
+        {weaponCarac('Action', weapon.action)}
         {weaponCarac('Caliber', weapon.caliber)}
         {weaponCarac('Magazine capacity', weapon.capacity)}
         {weaponCarac('Optimal range', weapon.range)}

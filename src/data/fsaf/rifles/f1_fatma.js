@@ -6,6 +6,7 @@ export default {
   name: 'F1 Fatma',
   image: <img src={SVG} />,
   capacity: 8,
+  action: 'Semi-automatic',
   caliber: '7.68x54mm AFS-L',
   range: 'Medium',
   production_cost: 'Low',
