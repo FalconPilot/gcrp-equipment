@@ -5,6 +5,9 @@ import F1FATMA from './rifles/f1_fatma'
 // Cannons
 import KAMEL9975 from './cannons/kamel_99-75'
 
+// Global data
+import data from '../global'
+
 // Country object
 export default {
   name: 'Franco-Senegalese-Algerian Federation',

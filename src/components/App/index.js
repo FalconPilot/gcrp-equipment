@@ -4,6 +4,7 @@ import Menu from '../Menu'
 import Country from '../Country'
 import Weapon from '../Weapon'
 
+import data from '../../data/global'
 import countries from '../../data/countries'
 
 import './style.css'
@@ -37,6 +38,7 @@ class App extends Component {
       <React.Fragment>
         <header className='app-header' style={{ backgroundColor: this.state.country.color }}>
           <h1>{this.state.country.name}</h1>
+          <p className='header-subtitle'>Year {data.year}</p>
         </header>
         <main className='app-container'>
           <Menu

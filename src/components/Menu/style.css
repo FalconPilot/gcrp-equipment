@@ -1,10 +1,11 @@
 div.side-menu {
-  width: 150px;
+  width: 180px;
   display: flex;
   flex-direction: column;
 }
 
 div.side-menu > button {
+  display: flex;
   margin: 5px 0;
   border: none;
   background-color: #777;
@@ -15,6 +16,22 @@ div.side-menu > button {
   transition: 0.2s;
 }
 
+div.side-menu > button > span {
+  width: 3em;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+}
+
+div.side-menu > button > span > i {
+  opacity: 0.6;
+}
+
+div.side-menu > button > p {
+  flex: 1;
+  margin: 0;
+}
+
 div.side-menu > button:hover {
   cursor: pointer;
 }
@@ -22,6 +39,7 @@ div.side-menu > button:hover {
 div.side-menu > button.selected {
   background-color: #CCC;
   color: #333;
+  font-weight: bold;
 }
 
 div.side-menu > button:active,

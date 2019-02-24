@@ -1,0 +1,8 @@
+p.weapon-subtitle {
+  font-style: italic;
+  margin: 0 0 20px 0;
+}
+
+p.weapon-subtitle.future {
+  color: #AAA;
+}
