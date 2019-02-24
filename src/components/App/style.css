@@ -24,6 +24,7 @@ footer {
 
 header.app-header {
   padding: 20px;
+  transition: 0.2s;
 }
 
 header.app-header > h1 {
