@@ -62,12 +62,12 @@ const prosAndCons = (weapon) => (
       <table className='weapon-quality pros'>
         <thead>
           <tr>
-            <th colspan='2'>Pros</th>
+            <th colSpan='2'>Pros</th>
           </tr>
         </thead>
         <tbody>
-          {weapon.pros.map(pro => (
-            <tr>
+          {weapon.pros.map((pro, idx) => (
+            <tr key={`pro-${idx+1}`}>
               <td>+</td>
               <td>{pro}</td>
             </tr>
@@ -77,12 +77,12 @@ const prosAndCons = (weapon) => (
       <table className='weapon-quality cons'>
         <thead>
           <tr>
-            <th colspan='2'>Cons</th>
+            <th colSpan='2'>Cons</th>
           </tr>
         </thead>
         <tbody>
-          {weapon.cons.map(con => (
-            <tr>
+          {weapon.cons.map((con, idx) => (
+            <tr key={`con-${idx+1}`}>
               <td>-</td>
               <td>{con}</td>
             </tr>

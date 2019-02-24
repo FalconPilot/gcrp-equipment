@@ -36,7 +36,7 @@ const Menu = (props) => (
   <div className='side-menu'>
     <select className='country-selector' onChange={props.changeCountry}>
       {Object.entries(countries).sort(sortCountries).map(([k, country]) => (
-        <option value={k}>
+        <option value={k} key={k}>
           {country.acronym && `${country.acronym} - `}{country.name}
         </option>
       ))}
