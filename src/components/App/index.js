@@ -4,6 +4,7 @@ import Menu from '../Menu'
 import Country from '../Country'
 import Weapon from '../Weapon'
 
+import { version } from '../../../package.json'
 import data from '../../data/global'
 import countries from '../../data/countries'
 
@@ -63,6 +64,10 @@ class App extends Component {
           />
         </main>
         <footer className='app-footer'>
+          <p>App v{version}</p>
+          <p>
+            Want to make Vectorial weapons ? Try <a href='https://vectr.com/' target='_blank'>Vectr</a> !
+          </p>
         </footer>
       </React.Fragment>
     )
