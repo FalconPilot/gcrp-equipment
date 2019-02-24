@@ -8,7 +8,7 @@ export default {
   image: <img src={SVG} />,
   capacity: 10,
   action: 'Bolt-action',
-  caliber: '7.50x59mm',
+  caliber: '7.62x45mm',
   range: 'Medium',
   production_cost: 'Average',
   supply_cost: 'Low',
