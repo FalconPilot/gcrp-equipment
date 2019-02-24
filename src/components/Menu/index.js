@@ -34,7 +34,7 @@ const sortCountries = ([k1, c1], [k2, c2]) => (
 
 const Menu = (props) => (
   <div className='side-menu'>
-    <select className='country-selector' onChange={props.changeCountry}>
+    <select className='country-selector' onChange={props.changeCountry} value={props.country_key}>
       {Object.entries(countries).sort(sortCountries).map(([k, country]) => (
         <option value={k} key={k}>
           {country.acronym && `${country.acronym} - `}{country.name}

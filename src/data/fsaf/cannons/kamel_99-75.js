@@ -12,7 +12,7 @@ export default {
   supply_cost: 'High',
   stats: {
     firepower: 80,
-    accuracy: 85,
+    accuracy: 65,
     reliability: 70
   },
   pros: [
