@@ -56,6 +56,43 @@ const weaponCaracs = (weapon) => (
     </table>
 )
 
+const prosAndCons = (weapon) => (
+  weapon.pros && weapon.cons && (
+    <React.Fragment>
+      <table className='weapon-quality pros'>
+        <thead>
+          <tr>
+            <th colspan='2'>Pros</th>
+          </tr>
+        </thead>
+        <tbody>
+          {weapon.pros.map(pro => (
+            <tr>
+              <td>+</td>
+              <td>{pro}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <table className='weapon-quality cons'>
+        <thead>
+          <tr>
+            <th colspan='2'>Cons</th>
+          </tr>
+        </thead>
+        <tbody>
+          {weapon.cons.map(con => (
+            <tr>
+              <td>-</td>
+              <td>{con}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </React.Fragment>
+  )
+)
+
 const Weapon = (props) => {
   const weapon = getWeapon(props.country, props.option)
   return (
@@ -66,6 +103,9 @@ const Weapon = (props) => {
       <div className='weapon-attributes'>
         {weaponCaracs(weapon)}
         {weapon.stats && weaponStats(weapon.stats)}
+      </div>
+      <div className='weapon-qualities'>
+        {prosAndCons(weapon)}
       </div>
       <pre className='weapon-description'>{weapon.description}</pre>
     </div>

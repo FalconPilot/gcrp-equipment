@@ -13,6 +13,14 @@ div.weapon-attributes {
   justify-content: center;
 }
 
+div.weapon-qualities {
+  width: 100%;
+  margin: 10px 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
 div.weapon-stat {
   display: flex;
   align-items: center;
@@ -74,12 +82,44 @@ table.weapon-caracs td:first-child {
 
 table.weapon-caracs td:nth-child(2) {
   font-style: italic;
+  font-size: 12px;
 }
 
 table.weapon-caracs td {
   color: #777;
   padding: 2px;
   border-bottom: 1px dashed #AAA;
+}
+
+table.weapon-quality {
+  width: 50%;
+}
+
+table.weapon-quality th {
+  border-bottom: 1px solid #CCC;
+}
+
+table.weapon-quality td:first-child {
+  width: 1em;
+  text-align: center;
+}
+
+table.weapon-quality td:nth-child(2) {
+  padding-right: 20px;
+  font-size: 12px;
+  font-style: italic;
+}
+
+table.weapon-quality.pros th,
+table.weapon-quality.pros td:first-child {
+  color: #5C5;
+  font-weight: bold;
+}
+
+table.weapon-quality.cons th,
+table.weapon-quality.cons td:first-child {
+  color: #C55;
+  font-weight: bold;
 }
 
 pre.weapon-description {
