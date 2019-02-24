@@ -45,15 +45,15 @@ const weaponCarac = (label, value) => (
 )
 
 const weaponCaracs = (weapon) => (
-  <table className='weapon-caracs'>
-    <tbody>
-      {weaponCarac('Caliber', weapon.caliber)}
-      {weaponCarac('Magazine capacity', weapon.capacity)}
-      {weaponCarac('Optimal range', weapon.range)}
-      {weaponCarac('Production cost', weapon.production_cost)}
-      {weaponCarac('Supply cost', weapon.supply_cost)}
-    </tbody>
-  </table>
+    <table className='weapon-caracs'>
+      <tbody>
+        {weaponCarac('Caliber', weapon.caliber)}
+        {weaponCarac('Magazine capacity', weapon.capacity)}
+        {weaponCarac('Optimal range', weapon.range)}
+        {weaponCarac('Production cost', weapon.production_cost)}
+        {weaponCarac('Supply cost', weapon.supply_cost)}
+      </tbody>
+    </table>
 )
 
 const Weapon = (props) => {
@@ -62,9 +62,11 @@ const Weapon = (props) => {
     <div className={props.className}>
       <h2 className='weapon-title'>{weapon.name}</h2>
       {manufacturingDate(weapon)}
-      {weapon.stats && weaponStats(weapon.stats)}
       {weapon.image}
-      {weaponCaracs(weapon)}
+      <div className='weapon-attributes'>
+        {weaponCaracs(weapon)}
+        {weapon.stats && weaponStats(weapon.stats)}
+      </div>
       <pre className='weapon-description'>{weapon.description}</pre>
     </div>
   )

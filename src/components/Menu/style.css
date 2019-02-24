@@ -5,6 +5,10 @@ div.side-menu {
   overflow: auto;
 }
 
+div.side-menu > select {
+  margin: 10px 0 5px 0;
+}
+
 div.side-menu > h3 {
   margin: 10px 20px;
   padding: 5px 0;

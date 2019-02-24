@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import data from '../../data/global'
+import countries from '../../data/countries'
 
 import './style.css'
 
@@ -27,8 +28,19 @@ const sortWeapons = ([k1, w1], [k2, w2]) => (
   )
 )
 
+const sortCountries = ([k1, c1], [k2, c2]) => (
+  c1.acronym < c2.acronym ? -1 : 1
+)
+
 const Menu = (props) => (
   <div className='side-menu'>
+    <select className='country-selector' onChange={props.changeCountry}>
+      {Object.entries(countries).sort(sortCountries).map(([k, country]) => (
+        <option value={k}>
+          {country.acronym && `${country.acronym} - `}{country.name}
+        </option>
+      ))}
+    </select>
     <Item
       label='Country info'
       year={data.year}

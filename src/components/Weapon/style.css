@@ -7,6 +7,12 @@ p.weapon-subtitle.future {
   color: #AAA;
 }
 
+div.weapon-attributes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 div.weapon-stat {
   display: flex;
   align-items: center;
@@ -80,4 +86,10 @@ pre.weapon-description {
   width: 100%;
   padding: 5px;
   white-space: pre-wrap;
+}
+
+@media all and (max-width: 748px) {
+  div.weapon-attributes {
+    flex-direction: column-reverse;
+  }
 }

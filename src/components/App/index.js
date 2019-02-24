@@ -32,13 +32,21 @@ class App extends Component {
     }, () => console.log(this.state))
   }
 
+  changeCountry = (event) => {
+    this.setState({
+      country: countries[event.currentTarget.value] || this.state.country,
+      option: 'COUNTRY',
+      type: 'COUNTRY'
+    })
+  }
+
   render() {
     const Viewport = matchViewport(this.state.type)
     return (
       <React.Fragment>
         <header className='app-header' style={{ backgroundColor: this.state.country.color }}>
-          <h1>{this.state.country.name}</h1>
-          <p className='header-subtitle'>Year {data.year}</p>
+          <h1 style={{ color: this.state.country.title }}>{this.state.country.name}</h1>
+          <p style={{ color: this.state.country.title }} className='header-subtitle'>Year {data.year}</p>
         </header>
         <main className='app-container'>
           <Menu
@@ -46,6 +54,7 @@ class App extends Component {
             option={this.state.option}
             type={this.state.type}
             updateValue={this.updateOption}
+            changeCountry={this.changeCountry}
           />
           <Viewport
             className='item-viewport'

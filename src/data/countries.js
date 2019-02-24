@@ -1,5 +1,11 @@
 import FSAF from './fsaf'
+import RPL from './rpl'
+import RR from './rr'
+import FSWP from './fswp'
 
 export default {
-  FSAF
+  FSAF,
+  RPL,
+  RR,
+  FSWP
 }
