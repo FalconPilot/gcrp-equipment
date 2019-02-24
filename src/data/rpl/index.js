@@ -1,3 +1,6 @@
+// Rifles
+import AWM1900 from './rifles/aw_m1900'
+
 // Country object
 export default {
   name: 'Republic of Poland-Lituania',
@@ -11,5 +14,12 @@ export default {
   ruling_party: 'Parti Imperial (conservative)',
   anthem: 'Mazurek Dąbrowskiego',
   leader: 'Sa Majesté Impériale Napoléon V (Józef Alexandre Walewski)',
-  weapons: {}
+  weapons: {
+    rifles: {
+      label: 'Rifles',
+      elements: {
+        aw_m1900: AWM1900
+      }
+    }
+  }
 }
