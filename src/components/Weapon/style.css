@@ -128,6 +128,35 @@ pre.weapon-description {
   white-space: pre-wrap;
 }
 
+div.weapon-authors {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+div.weapon-authors > h5 {
+  margin: 5px 0;
+  font-size: 15px;
+  font-style: italic;
+  color: #777;
+  border-bottom: 1px solid #CCC;
+}
+
+div.weapon-authors > h5:before {
+  content: "ℹ ";
+  font-style: normal;
+  color: #333;
+  font-size: 20px;
+}
+
+div.weapon-authors > p {
+  margin: 0;
+  padding: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
 @media all and (max-width: 748px) {
   div.weapon-attributes {
     flex-direction: column-reverse;

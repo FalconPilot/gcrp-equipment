@@ -1,11 +1,14 @@
 import React from 'react'
 
+import Authors from '../../authors'
+
 import SVG from '../../../images/mgs/mal-8.svg'
 
 export default {
   name: 'MAL-8',
   year: 1900,
   image: <img src={SVG} />,
+  authors: [Authors.ralph],
   capacity: 200,
   action: 'Fully automatic',
   caliber: '8mm AFS',

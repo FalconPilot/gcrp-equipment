@@ -1,10 +1,13 @@
 import React from 'react'
 
+import Authors from '../../authors'
+
 import SVG from '../../../images/rifles/aw_m1900.svg'
 
 export default {
   name: 'AW M1900',
   year: 1900,
+  authors: [Authors.ralph],
   image: <img src={SVG} />,
   capacity: 10,
   action: 'Bolt-action',

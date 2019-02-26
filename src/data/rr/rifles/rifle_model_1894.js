@@ -1,10 +1,13 @@
 import React from 'react'
 
+import Authors from '../../authors'
+
 import PNG from '../../../images/rifles/rifle_model_1894.png'
 
 export default {
   name: '6.5mm Rifle M1894',
   year: 1894,
+  authors: [Authors.semi],
   image: <img src={PNG} />,
   capacity: 6,
   action: 'Bolt-action',

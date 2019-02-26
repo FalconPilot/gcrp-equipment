@@ -94,6 +94,17 @@ const prosAndCons = (weapon) => (
   )
 )
 
+const weaponAuthors = (weapon) => (
+  Array.isArray(weapon.authors) && weapon.authors.length > 0 && (
+    <div className='weapon-authors'>
+      <h5>Image authors</h5>
+      {weapon.authors.map((author, idx) => (
+        <p key={`weap_author_${idx+1}`}>{author.name}</p>
+      ))}
+    </div>
+  )
+)
+
 const Weapon = (props) => {
   const weapon = getWeapon(props.country, props.option)
   return (
@@ -101,6 +112,7 @@ const Weapon = (props) => {
       <h2 className='weapon-title'>{weapon.name}</h2>
       {manufacturingDate(weapon)}
       {weapon.image}
+      {weaponAuthors(weapon)}
       <div className='weapon-attributes'>
         {weaponCaracs(weapon)}
         {weapon.stats && weaponStats(weapon.stats)}
