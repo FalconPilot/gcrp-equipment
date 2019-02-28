@@ -16,29 +16,11 @@ div#root {
   flex-direction: column;
 }
 
+button:hover { cursor: pointer; }
+
 header,
 main,
-footer {
-  width: 100%;
-}
-
-header.app-header {
-  padding: 20px;
-  transition: 0.2s;
-}
-
-header.app-header > h1 {
-  width: 100%;
-  text-align: center;
-  margin: 0;
-}
-
-p.header-subtitle {
-  width: 100%;
-  text-align: center;
-  font-style: italic;
-  opacity: 0.7;
-}
+footer { width: 100%; }
 
 main.app-container {
   display: flex;

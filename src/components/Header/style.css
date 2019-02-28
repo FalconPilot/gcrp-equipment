@@ -1,0 +1,28 @@
+header.app-header {
+  transition: 0.2s;
+}
+
+div.header-content {
+  width: 100%;
+  padding: 20px;
+}
+
+div.header-content > h1 {
+  width: 100%;
+  text-align: center;
+  margin: 0;
+}
+
+div.header-content > p {
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+div.app-user-space {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #FFF;
+}
