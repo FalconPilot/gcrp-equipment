@@ -1,5 +1,6 @@
 // Rifles
 import AWM1900 from './rifles/aw_m1900'
+import PKRD from './rifles/pkrd'
 
 // Country object
 export default {
@@ -18,7 +19,8 @@ export default {
     rifles: {
       label: 'Rifles',
       elements: {
-        aw_m1900: AWM1900
+        aw_m1900: AWM1900,
+        pkrd: PKRD
       }
     }
   }
