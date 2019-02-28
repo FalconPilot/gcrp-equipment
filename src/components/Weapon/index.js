@@ -58,7 +58,9 @@ const weaponCaracs = (weapon) => (
 )
 
 const prosAndCons = (weapon) => (
-  weapon.pros && weapon.cons && (
+  Array.isArray(weapon.pros) &&
+  Array.isArray(weapon.cons) &&
+  (weapon.pros.length > 0 || weapon.cons.length > 0) && (
     <React.Fragment>
       <table className='weapon-quality pros'>
         <thead>
