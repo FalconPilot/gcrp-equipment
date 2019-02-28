@@ -13,7 +13,7 @@ export default {
   action: 'Fully automatic',
   caliber: '8mm AFS',
   range: 'Medium',
-  production_cost: 'Slightly high',
+  production_cost: 'Medium-High',
   supply_cost: 'Medium',
   stats: {
     firepower: 70,
