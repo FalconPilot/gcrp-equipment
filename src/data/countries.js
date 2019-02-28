@@ -1,15 +1,15 @@
-import FSAF from './fsaf'
-import RPL from './rpl'
-import RR from './rr'
-import RI from './ri'
-import FSWP from './fswp'
-import FC from './fc'
+import ALGERIA  from './algeria'
+import POLAND   from './poland'
+import RUSSIA   from './russia'
+import ITALY    from './italy'
+import GERMANY  from './germany'
+import FRANCE   from './france'
 
 export default {
-  FC,
-  FSAF,
-  RPL,
-  RR,
-  RI,
-  FSWP
+  FRANCE,
+  ALGERIA,
+  POLAND,
+  RUSSIA,
+  ITALY,
+  GERMANY
 }
