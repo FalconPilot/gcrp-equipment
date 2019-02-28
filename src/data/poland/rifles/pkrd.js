@@ -1,16 +1,16 @@
 export default {
-  name: 'Philippe Karozov Richter Dabrisky "Starzec"',
-  year: 1900,
-  capacity: 10,
+  name: 'PKRD "Starzec"',
+  year: 1875,
+  capacity: 5,
   action: 'Bolt-action',
-  caliber: '7.62x45mm',
-  range: 'Medium',
+  caliber: '8mm Dabrisky',
+  range: 'Medium-Long',
   production_cost: 'Average',
   supply_cost: 'Low',
   stats: {
-    firepower: 40,
-    accuracy: 70,
-    reliability: 75
+    firepower: 70,
+    accuracy: 65,
+    reliability: 35
   },
   pros: [],
   cons: [],

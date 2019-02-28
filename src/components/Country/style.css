@@ -17,3 +17,13 @@ table.country-stuff td {
   border-bottom: 1px dashed #CCC;
   color: #777;
 }
+
+td.military_link {
+  text-align: center;
+}
+
+pre.country-description {
+  width: 100%;
+  padding: 5px;
+  white-space: pre-wrap;
+}

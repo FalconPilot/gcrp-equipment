@@ -28,9 +28,16 @@ const Country = (props) => (
         {countryStuff('Ruling party', props.country.ruling_party)}
         {countryStuff('National anthem', props.country.anthem)}
         {countryStuff('Leader', props.country.leader)}
+        {props.country.military_link && (
+          <tr>
+            <td colSpan='2' className='military_link'>
+              <a href={props.country.military_link} target='_blank'>Military organization link</a>
+            </td>
+          </tr>
+        )}
       </tbody>
     </table>
-    <pre className='country-description'>{props.country.description}</pre>
+    <pre className='country-description'>{props.country.history}</pre>
   </div>
 )
 
