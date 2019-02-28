@@ -12,9 +12,9 @@ export default {
   allies: [],
   economy: 'Mixed economy',
   government: 'Constitutional monarchy',
-  ruling_party: 'Parti Imperial (conservative)',
-  anthem: 'Mazurek Dąbrowskiego',
-  leader: 'Sa Majesté Impériale Napoléon V (Józef Alexandre Walewski)',
+  ruling_party: 'Partia Cesarski (conservative)',
+  anthem: 'Jeszcze Polska nie zginęła (Poland Is Not Yet Lost)',
+  leader: 'Sa Majesté Impériale Napoléon V of house Bonaparte-Walewski (monarch) Karl Potworowski (prime minister)',
   weapons: {
     rifles: {
       label: 'Rifles',
