@@ -20,28 +20,24 @@ class App extends Component {
   }
 
   componentWillMount() {
-    try {
-      this.auth = newAuth()
-      parseHash(this.auth)
-        .then(res => res
-          ? Promise.resolve(res)
-          : Promise.reject(res)
-        )
-        .catch(() => checkSession(this.auth))
-        .then(res => {
-          console.log(res)
-          this.setState({
-            credentials: res
-          })
+    this.auth = newAuth()
+
+    parseHash(this.auth)
+      .then(res => res
+        ? Promise.resolve(res)
+        : Promise.reject(res)
+      )
+      .catch(() => checkSession(this.auth))
+      .then(res => {
+        console.log(res)
+        this.setState({
+          credentials: res
         })
-        .catch(console.warn)
-        .then(() => {
-          this.setState({ loading: false })
-        })
-    } catch(err) {
-      console.error(err)
-      this.setState({ loading: false })
-    }
+      })
+      .catch(console.warn)
+      .then(() => {
+        this.setState({ loading: false })
+      })
   }
 
   optionExist = (option, country_key) => {
