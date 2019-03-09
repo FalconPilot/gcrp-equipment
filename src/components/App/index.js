@@ -87,14 +87,27 @@ class App extends Component {
     }, this.saveState)
   }
 
+  loadCountryData = () => (
+    fetch(`${process.env.API_URL}/api/weapons/${this.state.country_key}`)
+      .then(res => res.json())
+      .then(data => console.log(data) || data)
+  )
+
   changeCountry = (event) => {
     const country = Object.entries(countries).filter(([k, c]) => k === event.currentTarget.value)[0]
-    this.setState({
-      country_key: country[0] || this.state.country_key,
-      country: country[1] || this.state.country,
-      option: 'COUNTRY',
-      type: 'COUNTRY'
-    }, this.saveState)
+    if (country[0] && this.state.country_key !== country[0]) {
+
+      this.loadCountryData()
+        .then(data => {
+          console.log(data)
+          this.setState({
+            country_key: country[0] || this.state.country_key,
+            country: country[1] || this.state.country,
+            option: 'COUNTRY',
+            type: 'COUNTRY'
+          }, this.saveState)
+        })
+    }
   }
 
   matchViewport = (type) => ({
